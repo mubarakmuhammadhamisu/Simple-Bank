@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import FormBottun from '@/component/FormBottun'
+import BText from '@/component/BText'
 
 const SignUp = () => {
   return (
@@ -20,8 +22,8 @@ const SignUp = () => {
           <label htmlFor="Password" className='font-bold'>Password</label>
           <input type='password' placeholder='Password' id='Password' className='w-full bg-[#E5E7FA] p-2.5 rounded-lg mb-2.5 border border-blue-300 focus:border-blue-300 focus:outline-blue-600'/>
 
-          <button id='submit-button' className='bg-blue-800 text-white font-bold w-full p-2 rounded-lg mb-2.5'>Register</button>
-         <p className='self-center'>Already have an account? <Link href='/signin' className='text-blue-700 underline'> Sign in</Link></p>
+          <FormBottun type='submit' text='Create account' />
+         <BText Text='Already have an account?' LinkTo='/login' LinkText='Log In'/>
         </div>
 
       </div>
