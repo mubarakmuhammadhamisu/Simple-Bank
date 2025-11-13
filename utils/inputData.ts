@@ -25,13 +25,6 @@ export const signupInputs: InputData[] = [
     Placeholder: "Enter your email",
   },
   {
-    Id: "signup-phone",
-    Name: "phone",
-    Label: "Phone Number",
-    Type: "tel",
-    Placeholder: "Enter your phone number",
-  },
-  {
     Id: "signup-password",
     Name: "password",
     Label: "Password",
@@ -46,3 +39,20 @@ export const signupInputs: InputData[] = [
     Placeholder: "Confirm your password",
   },
 ];
+
+export const loginInputs: InputData[] = [
+  {
+    Id: "signup-email",
+    Name: "email",
+    Label: "Email",
+    Type: "email",
+    Placeholder: "Enter your email",
+  },
+  {
+    Id: "signup-password",
+    Name: "password",
+    Label: "Password",
+    Type: "password",
+    Placeholder: "Enter your password",
+  }
+]
