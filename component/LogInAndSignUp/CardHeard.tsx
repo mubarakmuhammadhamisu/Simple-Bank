@@ -12,7 +12,7 @@ const CardHeard = ({Page, Infor}:{
           <h1 id='head-text' className='font-bold text-2xl font-sans mb-2.5 text-blue-900 mt-2'>SimpliBank</h1>
         </div>
         <h2 className='text-2xl font-sans font-bold mb-4 text-black'>{Page}</h2>
-        <p className='text-blue-800 text-sm'>{Infor}</p>
+        <p className='text-gray-800 font-mono text-sm'>{Infor}</p>
     </div>
   )
 }

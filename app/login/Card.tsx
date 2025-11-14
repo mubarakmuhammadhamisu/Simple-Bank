@@ -6,14 +6,14 @@ import { loginInputs, InputData } from '@/utils/inputData'
 
 const Card = () => {
   return (
-    <div id='card-div' className=' w-full max-w-sm h-auto bg-white rounded-lg shadow-lg p-5 flex flex-col items-center border border-blue-200'>
+    <div id='card-div' className=' w-full max-w-sm h-auto bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center border border-blue-200'>
 
-        <CardHeard Page='Log In' Infor='Enter your email below to login to your account' />
+       <CardHeard Page='Log In' Infor='Enter your email below to login to your account' />
         
 
         <div id='input-btn-div' className='w-full flex flex-col p-2.5'>
           {loginInputs.map((input: InputData ) => (
-            <Input key={input.Id} Type={input.Type} Class='mb-5' Name={input.Name} Id={input.Id} Placeholder={input.Placeholder} Label={input.Label}/>
+            <Input key={input.Id} {...input} Class='mb-5'/>
           ))}
         
           <FormBottun type='submit' text='Create account' />

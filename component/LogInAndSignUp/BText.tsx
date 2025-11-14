@@ -11,7 +11,7 @@ const BText = ({Text, LinkTo, LinkText}:
 ) => {
   return (
     <>
-        <p className='self-center'>{Text}  <Link href={LinkTo} className='text-blue-700 underline font-bold'>{ LinkText}</Link></p>
+        <p className='self-center'>{Text}  <Link href={LinkTo} className='text-blue-700 underline'>{ LinkText}</Link></p>
     </>
   )
 }
