@@ -20,12 +20,15 @@ const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
     <ul className={`
       flex flex-col w-auto justify-center items-center absolute gap-6 p-6 top-28 right-4 rounded-2xl 
       shadow-2xl bg-white 
-      md:flex-row md:justify-end md:gap-4 md:static md:w-full md:shadow-none 
+       
       ${isClicked 
           ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
           : "opacity-0 scale-95 -translate-y-4 pointer-events-none"
         }
-         md:opacity-100 md:p-0 lg:gap-8`}>
+        md:flex-row md:justify-end md:gap-4 md:static md:w-full md:shadow-none 
+        md:opacity-100 md:scale-100 md:translate-y-0 md:pointer-events-auto md:p-0
+        lg:gap-8
+         `}>
       {LinkData.map((link)=>{
         const isActive = pathname === link.href;
         return(
