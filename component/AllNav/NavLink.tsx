@@ -18,22 +18,22 @@ const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
   const pathname = usePathname();
   return (
     <ul className={`
-      flex flex-col w-auto justify-center items-center absolute gap-6 p-6 top-28 right-4 rounded-2xl 
-      shadow-2xl bg-white 
+      flex flex-col w-auto justify-center items-center absolute gap-6 p-6 top-20 right-4 rounded-2xl 
+      shadow-2xl bg-white/80 sm:bg-transparent
        
       ${isClicked 
           ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
           : "opacity-0 scale-95 -translate-y-4 pointer-events-none"
         }
-        md:flex-row md:justify-end md:gap-4 md:static md:w-full md:shadow-none 
-        md:opacity-100 md:scale-100 md:translate-y-0 md:pointer-events-auto md:p-0
+        sm:flex-row sm:justify-end sm:gap-4 sm:static sm:w-full sm:shadow-none 
+        sm:opacity-100 sm:scale-100 sm:translate-y-0 sm:pointer-events-auto sm:p-0
         lg:gap-8
          `}>
       {LinkData.map((link)=>{
         const isActive = pathname === link.href;
         return(
         <li key={link.href} className={
-          `px-1 py- text-gray-500 hover:border-b-2 hover:border-b-blue-600  hover:text-blue-600 hover:py-1 transition 
+          `px-1 py- text-gray-800 hover:border-b-2 hover:border-b-blue-600  hover:text-blue-600 hover:py-1 transition 
           ${isActive && 'border-b-2 border-b-blue-600'}`
           }>
           <Link href={link.href} className='  '>{link.label}</Link>

@@ -1,13 +1,20 @@
-import React from 'react'
+import Link from 'next/link'
 import BanknoteIcon from './BankLogo'
 
 
-const BankLogoAndName = () => {
+type Props = {
+  className?: string;
+}
+
+
+const BankLogoAndName = ({className}:Props) => {
   return (
-    <div className='flex justify-between items-center gap-3'>
-        <BanknoteIcon />
+      <Link href='/' className={
+        `flex justify-between items-center gap-3 ${className}`
+        }>
+      <BanknoteIcon />
         <h2 className='text-lg font-bold text-blue-900'>SimpliBank</h2>
-    </div>
+      </Link> 
   )
 }
 
