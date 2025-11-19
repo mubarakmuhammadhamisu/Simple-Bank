@@ -1,14 +1,20 @@
-import Image from "next/image";
-import NavBar from "@/component/NavBar";
-import MaxWidth from "@/component/Max-width";
+import NavBar from '@/component/NavBar'
+import MaxWidth from '@/component/Max-width'
+import LandindPageBody from '@/component/LandindPageBody'
+import FAF from '@/component/FeatureAndFooter/FAF'
 
-export default function Home() {
+
+const page = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <MaxWidth>
-        <NavBar />
-      </MaxWidth>
-      bbbgfgjioimjd
-    </div>
-  );
+      <div className='w-full min-h-screen bg-[#E5E7FA] '>
+          <MaxWidth className='mt- sm:mt-28 lg:mt- bg-amber-00'>
+            <NavBar className='fixed top-10 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+            <LandindPageBody />
+               <FAF />
+          </MaxWidth>      
+      </div>
+  )
+
 }
+
+export default page
