@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '@/component/Card'
+import Card from '@/component/AuthCard'
 import NavBar from '@/component/NavBar'
 import MaxWidth from '@/component/Max-width'
 import { signupInputs } from '@/utils/inputData'
