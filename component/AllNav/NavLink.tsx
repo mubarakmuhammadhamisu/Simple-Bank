@@ -18,7 +18,7 @@ const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
   const pathname = usePathname();
   return (
     <ul className={`
-      flex flex-col w-auto justify-center items-center absolute gap-6 p-6 top-20 right-4 rounded-2xl 
+      flex-col w-auto flex justify-center items-center absolute gap-6 p-6 top-20 right-4 rounded-2xl 
       shadow-2xl bg-white/80 sm:bg-transparent
        
       ${isClicked 

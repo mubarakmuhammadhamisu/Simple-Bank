@@ -15,7 +15,7 @@ const LinkCard = () => {
         shadow-lg shadow-black/20 hidden lg:flex  sm:row-span-2 min-w-44'
       >
       {/* Main Card Container (Replicating the soft, rounded design) */}
-      <div className="w-full h-full p-5  bg-white  rounded-3xl  shadow-2xl 
+      <div className="w-full h-full p-5  bg-white  rounded-2xl  shadow-2xl 
          shadow-gray-300/60 border border-gray-100 "
         >
         

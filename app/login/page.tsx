@@ -6,10 +6,10 @@ import { loginInputs } from '@/utils/inputData'
 
 const LogIn = () => {
   return (
-    <div id='body-div' className='w-full min-h-screen bg-[#E5E7FA] flex justify-center items-center'>
-      <MaxWidth>
+    <div id='body-div' className='w-full min-h-screen flex justify-center items-center'>
+      {/*<MaxWidth>
         <NavBar />
-      </MaxWidth>
+      </MaxWidth>*/}
       <Card formData={loginInputs} 
          page='Log In' 
          infor='Enter your email below to login to your account' 

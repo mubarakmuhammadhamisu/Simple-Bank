@@ -1,7 +1,7 @@
 import FormBottun from '@/component/LogInAndSignUp/FormBottun'
 import BText from '@/component/LogInAndSignUp/BText'
 import Input from '@/component/LogInAndSignUp/Input'
-import CardHeard from '@/component/LogInAndSignUp/CardHeard'
+import CardHeard from '@/component/LogInAndSignUp/AuthHeard'
 
 type InputData = {
   Id: string;

@@ -7,10 +7,12 @@ import { signupInputs } from '@/utils/inputData'
 
 const SignUp = () => {
   return (
-    <div id='body-div' className='w-full min-h-screen bg-[#E5E7FA] flex justify-center items-center'>
-      <MaxWidth>
+    <>
+    {/*<MaxWidth>
         <NavBar />
-      </MaxWidth>
+      </MaxWidth>*/}
+    <div id='body-div' className=' w-full min-h-screen flex justify-center items-center'>
+      
       <Card formData={signupInputs} 
         page='Create an account'
         infor='Enter your information to create an account' 
@@ -20,6 +22,7 @@ const SignUp = () => {
         linkT='Log in'
       />
 </div>
+</>
   )
 }
 

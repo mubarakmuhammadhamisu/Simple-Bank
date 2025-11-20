@@ -7,8 +7,8 @@ import DataCard from './LandinPage/DataCard/DataCard';
 const LandindPageBody = () => {
   return (
     <div className={
-     `grid grid-cols-1 auto-rows-auto  sm:grid-cols-4 lg:grid-cols-5 sm:grid-ros-2 w-full 
-      sm:h-auto gap-7 py-6 sm:py-6  sm:px-4 bg-red-00 self-center xl:pr-0`
+     `grid grid-cols-1 pt-16 auto-rows-auto  sm:grid-cols-4 lg:grid-cols-5 sm:grid-ros-2 w-full 
+      sm:h-auto gap-7 sm:pt-6 py-6 sm:py-6  sm:px-4 bg-red-00 self-center xl:pr-0`
       }>
 
       <HeroText />

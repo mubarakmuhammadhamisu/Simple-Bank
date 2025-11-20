@@ -7,7 +7,7 @@ const CardHeard = ({Page, Infor}:{
 }) => {
   return (
     <div id='head-div' className=' w-full mb-4 text-center '>
-        <div className='flex justify-center gap-3 items-center w-f'>
+        <div className='flex items-center justify-center gap-3 w-f'>
           <BanknoteIcon />
           <h1 id='head-text' className='font-bold text-2xl font-sans mb-2.5 text-blue-900 mt-2'>SimpliBank</h1>
         </div>
