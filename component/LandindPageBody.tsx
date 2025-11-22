@@ -20,7 +20,7 @@ const LandindPageBody = () => {
           <p className="p-6 pt-8 pb-2 text-white ">Primary checking Account</p>
           <div className='p-6 flex items-center h-20'>
             <h1 className="pt-0 text-3xl text-white sm:text-4xl font-bold ">
-              $12,450.75 
+              $12,450.75
               </h1>
               <p><Eye className='ml-3 sm:ml-5  xl:ml-12 text-blue-300' size={50} strokeWidth={2}/></p>
           </div>

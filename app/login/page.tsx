@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '@/component/AuthCard'
-import NavBar from '@/component/NavBar'
+import NavBar from '@/component/navba/NavBar'
 import MaxWidth from '@/component/Max-width'
 import { loginInputs } from '@/utils/inputData'
 

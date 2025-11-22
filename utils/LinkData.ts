@@ -3,7 +3,7 @@ type LinkDataType = {
   href: string;
 }[];
 export const NavLinkData: LinkDataType = [
-  { label: "Features", href: "/features" },
+  { label: "Features", href: "#features" },
   { label: "Security", href: "/security" },
   { label: "About",    href: "/about" },
   {label: "Login",     href: "/login" }

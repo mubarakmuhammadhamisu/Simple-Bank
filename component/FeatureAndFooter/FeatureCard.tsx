@@ -3,7 +3,7 @@
  const FeatureCard =({imageSrc, altText, title, description, className,imgsub }:
      {imageSrc: string, altText: string, title: string, description: string, className?:string, imgsub?:string}) => {
         return(
-            <div  className={`flex items-center rounded-2xl shadow-2xl 
+            <div  id='features' className={`flex items-center rounded-2xl shadow-2xl 
                 p-4 pl-0 sm:min-w-60 bg-white hover:scale-105 transition-all 
                 hover:bg-white/10 hover:backdrop-blur-md`}>
                 <div  className='flex flex-col items-center'>

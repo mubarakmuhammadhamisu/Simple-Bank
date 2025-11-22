@@ -8,7 +8,7 @@ const HanBG = ( {isClicked, setIsClicked}:Props) => {
   return (
     <button
   onClick={() => setIsClicked(!isClicked)}
-  className="text-gray-900 md:hidden"
+  className="text-gray-900 sm:hidden"
 >
   {isClicked ? (
     // Close icon
