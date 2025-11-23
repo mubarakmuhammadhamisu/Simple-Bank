@@ -1,8 +1,9 @@
 import {Eye} from 'lucide-react';
 
-import HeroText from "./LandinPage/HeroText"
-import LinkCard from "./LinkCard"
-import DataCard from './LandinPage/DataCard/DataCard';
+import HeroText from "@/component/LandinPage/HeroText"
+import DataCard from '@/component/LandinPage/DataCard/DataCard';
+import NavLinkWrapper from './SideBar/NavLinkWrapper';
+
 
 const LandindPageBody = () => {
   return (
@@ -13,7 +14,7 @@ const LandindPageBody = () => {
 
       <HeroText />
 
-      <LinkCard />
+      <NavLinkWrapper TorF={true} />
 
       <div className='flex flex-col bg-gradient-to-l from-blue-500 to-blue-950 rounded-xl 
         shadow-xl col-span-2 min-w-60 max-w-96 sm:max-w-full min-h-40 ml-16 mr-11 sm:m-0'>
