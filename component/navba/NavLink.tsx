@@ -39,7 +39,7 @@ const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
           <Link href={link.href} className='  '>{link.label}</Link>
         </li>)
       })}
-      <li><CTAButton /></li>
+      <li><CTAButton href='/register' className='md:ml-6'/></li>
     </ul>
   )
 }

@@ -17,7 +17,7 @@ const LNDpage = () => {
               <NavLogic/>
             </NavBar>
             <LandindPageBody />
-               <FAF />
+               <FAF />    
           </MaxWidth>      
       </div>
   )

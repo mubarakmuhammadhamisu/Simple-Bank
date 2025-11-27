@@ -15,7 +15,7 @@ type props ={
 const LinkCard = ({navItems, TorF = false, className}: props) => {
 
   // Set 'Transfers' as the initial active item on the landing page to match the image
- const [activeItem, setActiveItem] = useState(TorF? 'Transfers':'Dashboard');
+ const [activeItem, setActiveItem] = useState(TorF? 'Transfers':'');
  const pathname = usePathname();
  // Case 1: Landing page → Use local state only
   useEffect(() => {
@@ -42,10 +42,10 @@ const LinkCard = ({navItems, TorF = false, className}: props) => {
          shadow-gray-300/60 border border-gray-100 "
         >
         
-       <BankLogoAndName className='pointer-events-none gap-2 justify-center mb-3'/>
+       <BankLogoAndName className='pointer-events-none gap-2 justify-center pb-8 border-b border-b-1.5'/>
 
-        <nav className="space-y-3 ml-3">
-          {navItems.map((item) => (
+        <nav className="space-y-3 ml-3 pt-8">
+          {navItems.map((item ) => (
             <LanLinks
               key={item.name}
               {...item}

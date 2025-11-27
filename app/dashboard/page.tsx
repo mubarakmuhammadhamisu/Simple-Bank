@@ -1,26 +1,27 @@
-import MaxWidth from '@/component/Max-width'
-import NavLinkWrapper from '@/component/SideBar/NavLinkWrapper'
-import DashNavBar from '@/component/dashboard/DashNavBar'
-
+import React from 'react'
+import PageTemp from '@/component/PageTemp'
+import BalanceCard from '@/component/dashboard/BalanceCard'
+import RTCard  from '@/component/dashboard/RTCard'
+import QTCard from '@/component/dashboard/QTCard'
+import SACard from '@/component/dashboard/SACard'
+import FHSCard from '@/component/dashboard/FHSCard'
 
 const page = () => {
   return (
-    <div className='w-full min-h-full'>
-      
-      <DashNavBar />
+    <PageTemp>
+      <BalanceCard /> 
+            
+            <div className="flex gap-4 lg:gap-14 flex-wrap w-full justify justify-center sm:justify-start">
 
-      <MaxWidth className='bg-blue-500 mt-28'>
-        <div className='grid  md:grid-cols-5 gap-3 w-full h-screen sm:mx-auto sm: '>
+              <RTCard/>
 
-          {/*<div className='hidden md:flex flex-col gap-4 w-full h-full bg-red-600 rounded-xl min-w-36'>
-            <div className='w-full h-20 border border-b-1'></div>
-          </div>*/}
-          <NavLinkWrapper TorF={false}/>
+              <SACard/>
+   
+              <QTCard/>
 
-          <div  className='w-full h-full bg-pink-600 col-span-4 rounded-xl'></div>
-        </div>
-      </MaxWidth>
-    </div>
+              <FHSCard/>
+            </div>
+    </PageTemp>
   )
 }
 

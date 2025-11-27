@@ -6,7 +6,7 @@ const DashNavBar = () => {
   return (
     <NavBar className='flex w-11/12 sm:w-10/12 max-w-7xl' >
       <div className='flex gap-3'>
-        <div className='flex gap-2'>
+        <div className='hidden sm:flex flex-row gap-2'>
         <BanknoteIcon size={true} />
         <p className="text-md text-gray-500">welcome back, mubarak!</p>
         </div>

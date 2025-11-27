@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Input = ({Id, Type, Placeholder, Label, Name, Class }:{
-    Id:   string;
+    Id?:   string;
     Type: string;
     Placeholder: string;
-    Label: string;
+    Label?: string;
     Name: string;
     Class?: string;
 }) => {
