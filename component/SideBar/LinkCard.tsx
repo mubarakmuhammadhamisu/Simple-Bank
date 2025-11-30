@@ -1,9 +1,10 @@
 "use client"
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import BankLogoAndName from '../BankLogoAndName';
-import LanLinks from './LanLink'
-import {NavItem} from '@/utils/LinkData'
+import { useToggleStore } from '@/Store/toggleStore';
+import BankLogoAndName from '@/component/BankLogoAndName';
+import LanLinks from '@/component/SideBar/LanLink';
+import {NavItem} from '@/utils/LinkData';
 
 type props ={
   navItems: NavItem[];

@@ -10,7 +10,7 @@ const NavLogic = () => {
   return (
     <>
       <NavLink LinkData={NavLinkData} isClicked={isClicked} />
-      <HanBG isClicked={isClicked} setIsClicked={setIsClicked} />
+      <HanBG />
       {/*<NavLinkWrapper TorF={false} 
       className=' md:flex min-w-44 items-center h-10/12 sm:h-10/12 md:h-10/12 fixed'/>
       */}

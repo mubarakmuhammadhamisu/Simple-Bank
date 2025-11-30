@@ -1,7 +1,8 @@
 "use client"
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import CTAButton from './CTAButton'
+import CTAButton from '@/component/navba/CTAButton'
+import {useToggleStore} from '@/Store/toggleStore'
 
 
 type LinkinDataType={
@@ -15,13 +16,15 @@ type LinkinDataType={
 
 
 const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
+  const {isOpen} = useToggleStore();
   const pathname = usePathname();
   return (
+    
     <ul className={`
       flex-col w-auto flex justify-center items-center absolute gap-6 p-6 top-20 right-4 rounded-2xl 
       shadow-2xl bg-white/80 sm:bg-transparent
        
-      ${isClicked 
+      ${isOpen
           ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
           : "opacity-0 scale-95 -translate-y-4 pointer-events-none"
         }

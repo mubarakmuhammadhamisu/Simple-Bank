@@ -1,4 +1,4 @@
-import React from 'react'
+import HandGBD from '@/component/dashboard/HandGBD'
 import {Bell, BellDot} from 'lucide-react'
 import BanknoteIcon from '@/component/BankLogo'
 import NavBar from '@/component/navba/NavBar'
@@ -14,6 +14,7 @@ const DashNavBar = () => {
         <BellDot className='text-gray-500' fill='gray' size={20} strokeWidth={2}/>
 
         <Bell className='text-gray-500'fill='gray' size={20} strokeWidth={2}/>
+        <HandGBD/>
         </div>
         </div>
       </NavBar>

@@ -1,16 +1,14 @@
 import React from 'react'
+import { useToggleStore } from '@/Store/toggleStore'
 
-type Props = {
-  isClicked: boolean
-  setIsClicked: React.Dispatch<React.SetStateAction<boolean>>
-}
-const HanBG = ( {isClicked, setIsClicked}:Props) => {
+const HanBG = () => {
+  const { isOpen, toggle } = useToggleStore();
   return (
     <button
-  onClick={() => setIsClicked(!isClicked)}
-  className="text-gray-900 sm:hidden"
+  onClick={toggle}
+  className="text-gray-900 sm:hidden corsor-pointer"
 >
-  {isClicked ? (
+  {isOpen ? (
     // Close icon
     <svg
       xmlns="http://www.w3.org/2000/svg"
