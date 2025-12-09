@@ -1,19 +1,14 @@
 "use client"
-import { useState } from 'react'
-import NavLink from './NavLink'
+import NavLink from '@/component/navba/NavLink'
 import { NavLinkData } from '@/utils/LinkData'
-import HanBG from './HanBG'
-import NavLinkWrapper from '@/component/SideBar/NavLinkWrapper'
+import HanBG from '@/component/navba/HanBG'
 
 const NavLogic = () => {
-    const [isClicked, setIsClicked] = useState(false)
+    
   return (
     <>
-      <NavLink LinkData={NavLinkData} isClicked={isClicked} />
-      <HanBG />
-      {/*<NavLinkWrapper TorF={false} 
-      className=' md:flex min-w-44 items-center h-10/12 sm:h-10/12 md:h-10/12 fixed'/>
-      */}
+      <NavLink LinkData={NavLinkData} />
+      <HanBG className='sm:hidden'/>
 
     </>
 

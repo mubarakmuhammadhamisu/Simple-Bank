@@ -1,25 +1,17 @@
 import React from 'react'
 import { useToggleStore } from '@/Store/toggleStore'
+import Close from './Close';
 
-const HanBG = () => {
+const HanBG = ({className =""}) => {
   const { isOpen, toggle } = useToggleStore();
   return (
     <button
   onClick={toggle}
-  className="text-gray-900 sm:hidden corsor-pointer"
+  className={`text-gray-900 md:hidden corsor-pointer ${className}`}
 >
   {isOpen ? (
     // Close icon
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="2"
-      stroke="currentColor"
-      className="w-7 h-7"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
+    <Close />
   ) : (
     // Hamburger icon
     <svg

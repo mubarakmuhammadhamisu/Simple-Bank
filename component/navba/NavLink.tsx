@@ -10,12 +10,11 @@ type LinkinDataType={
     label:string;
     href:string;
   }[];
-  isClicked: Boolean;
 };
 
 
 
-const NavLink = ({LinkData, isClicked}:LinkinDataType) => {
+const NavLink = ({LinkData}:LinkinDataType) => {
   const {isOpen} = useToggleStore();
   const pathname = usePathname();
   return (
