@@ -1,10 +1,9 @@
 import React from 'react'
+import PaymentPage from "@/pages/PaymentPage"
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <PaymentPage/>
   )
 }
 

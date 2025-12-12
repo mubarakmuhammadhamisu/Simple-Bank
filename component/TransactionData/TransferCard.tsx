@@ -2,14 +2,14 @@
 
 import React from "react";
 import Input from "@/component/LogInAndSignUp/Input";
-import { X, User, Search} from 'lucide-react';
+import { User } from 'lucide-react';
 
 const TransferCard = () => {
   return (
-    <div className="w-full bg-white rounded-2xl p-6 shadow-lg text-center">
-      <p className="text-2xl fon-bold mb-2">Transaction</p>
+    <div className="w-full bg-white rounded-2xl p-6 shadow-lg">
+      <p className="text-3xl font-bold mb-2">Make a Transfer</p>
 
-      {/* GRID LAYOUT */}
+      {/* WRAPPER - for custom placement */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
 
         {/* LEFT SIDE */}
@@ -40,21 +40,6 @@ const TransferCard = () => {
             Name="amountLeft"
             Placeholder="₦0.00"
           />
-
-          {/* Recurring Payment */}
-          <div className="flex items-center gap-2 mt-2">
-            <input
-              type="checkbox"
-              id="recurring"
-              className="w-4 h-4"
-            />
-            <label
-              htmlFor="recurring"
-              className="text-gray-700 text-sm font-sans"
-            >
-              Recurring Payment
-            </label>
-          </div>
         </div>
 
         {/* RIGHT SIDE */}
@@ -76,13 +61,11 @@ const TransferCard = () => {
               Type="email"
               Name="recipientEmail"
               Placeholder="recipient@example.com"
-              classname=""
               Class="pr-10"
             />
 
-            {/* SEARCH ICON */}
-            <span className="absolute right- left-11/12 top-5/12 text-gray-400 cursor-pointer">
-              <User size={20} className="text-blue-500"/>
+            <span className="absolute right-3 top-10 text-gray-400 cursor-pointer">
+              <User size={20} className="text-blue-500" />
             </span>
           </div>
 
@@ -93,8 +76,23 @@ const TransferCard = () => {
             Type="number"
             Name="amountRight"
             Placeholder="₦0.00"
-            Class="border-none border-b "
+            Class="border-none border-b"
           />
+        </div>
+
+        {/* CHECKBOX - now outside columns */}
+        <div className="flex items-center gap-2 md:col-span-1 order-last md:order-none">
+          <input
+            type="checkbox"
+            id="recurring"
+            className="w-4 h-4"
+          />
+          <label
+            htmlFor="recurring"
+            className="text-gray-700 text-sm font-sans"
+          >
+            Recurring Payment
+          </label>
         </div>
       </div>
 
