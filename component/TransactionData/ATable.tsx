@@ -9,8 +9,9 @@ import Failed from './TransationSVGs/Failed'
 
 type Props = {
   isTransfer?:boolean,
+  Row?:number;
 }
-const Tb = ({isTransfer = false}:Props) => {
+const Tb = ({isTransfer = false, Row=6}:Props) => {
     const [showDetails, setShowDetails] = useState(false);
     const [data, setData] = useState(null);
     const handleRowClick = (item) => {
@@ -26,8 +27,7 @@ const Tb = ({isTransfer = false}:Props) => {
   : RecentActivityHeaders;
 
 
-  return (
-    <div className='w-full bg-gray-100 rounded-xl shadow-lg mb-8'>
+  return (   <div className='w-full bg-gray-100 rounded-xl shadow-lg mb-8'>
             <table className='w-full text-sm'>
               <thead>
                 <tr>
@@ -37,7 +37,7 @@ const Tb = ({isTransfer = false}:Props) => {
                 </tr>
               </thead>
               <tbody>
-                {filteredData.map((item, index) => (
+                {filteredData.slice(0,Row === 0 ? filteredData.length : Row).map((item, index) => (
                   <tr onClick={()=>handleRowClick(item)} key={item.id} className={`border-t cursor-pointer ${index % 2 === 0 ? 'border-gray-300 bg-gray-300' : 'border-gray-400'}`}>
                     <td className='p-2'>{item.date}</td>
                     {!isTransfer && <td className='p-2'>{item.description}</td>}

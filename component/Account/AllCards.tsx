@@ -4,7 +4,8 @@ const AllCards = () => {
   return (
     <>
         <div className=' m-0 w-full bg-blac text-black font-bold text-md'>My Account</div>
-        <div className='w-full h-auto  m-0 grid grid-cols-1 sm:grid-cols-2  xl:px-14 lg:grid-cols-3 gap-4 px-4 md:px-0 py-4'>
+        <div className={`w-full h-auto  m-0 grid grid-cols-1 sm:grid-cols-2 
+        xl:px-14 lg:grid-cols-3 gap-4 px-4 md:px-0 py-4`}>
             <AccountCard  
                 title='Primary Checking' 
                 price='$12,450.75'  
