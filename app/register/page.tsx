@@ -1,7 +1,4 @@
-import React from 'react'
 import Card from '@/component/LogInAndSignUp/AuthCard'
-import NavBar from '@/component/navba/NavBar'
-import MaxWidth from '@/component/Max-width'
 import { signupInputs } from '@/utils/inputData'
 
 

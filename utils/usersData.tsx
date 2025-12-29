@@ -1,0 +1,48 @@
+
+export const mockUsers = [
+  {
+    id: "u-001",
+    fullName: "Mubarak Muhammad Hamisu",
+    email: "mubarak@test.com",
+    username: "mubarak_h",
+    passwordHash: "hashed_password123",
+    role: "admin",
+    status: "active",
+  },
+  {
+    id: "u-002",
+    fullName: "Aisha Bello",
+    email: "aisha@test.com",
+    username: "aisha_b",
+    passwordHash: "hashed_password123",
+    role: "user",
+    status: "active",
+  },
+  {
+    id: "u-003",
+    fullName: "John Doe",
+    email: "john@test.com",
+    username: "john_d",
+    passwordHash: "hashed_password123",
+    role: "user",
+    status: "new",
+  },
+  {
+    id: "u-004",
+    fullName: "Fatima Yusuf",
+    email: "fatima@test.com",
+    username: "fatima_y",
+    passwordHash: "hashed_password123",
+    role: "user",
+    status: "incomplete",
+  },
+  {
+    id: "u-005",
+    fullName: "Suspended Account",
+    email: "blocked@test.com",
+    username: "blocked_user",
+    passwordHash: "hashed_password123",
+    role: "user",
+    status: "suspended",
+  },
+];

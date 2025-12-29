@@ -1,4 +1,4 @@
-import AccountPage from '@/pages/AccountPage'
+import AccountPage from '@/PageS/AccountPage'
 
 const page = () => {
   return (

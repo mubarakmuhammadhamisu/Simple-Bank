@@ -48,7 +48,7 @@ const PaymentCard = () => {
         />
 
         <div className="w-full flex justify-center items-center">
-            <button className="bg-gradient-to-r from-blue-900 to-blue-600 text-white
+            <button className="bg-linear-to-r from-blue-900 to-blue-600 text-white
           px-10 py-3 rounded-full font-semibold shadow 
           hover:opacity-90 transition" >Schedule Payment</button>
         </div>

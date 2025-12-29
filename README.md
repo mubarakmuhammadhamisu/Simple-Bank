@@ -26,8 +26,8 @@ Install dependencies:
 ```bash
 npm install
 
-Author
-Mubarak Muhammad Hamisu
+#**Author**
+#**Mubarak Muhammad Hamisu**
 
 ✔ Accurate  
 ✔ Beginner-friendly  

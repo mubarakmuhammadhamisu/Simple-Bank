@@ -1,5 +1,5 @@
 import React from 'react'
-import TransferPage from '@/pages/TransferPage'
+import TransferPage from '@/PageS/TransferPage'
 
 const Transfer = () => {
   return (

@@ -1,9 +1,11 @@
 import React from 'react'
-import PaymentPage from "@/PageS/PaymentPage"
+import SettingsPage from '@/PageS/SettingsPage'
 
 const page = () => {
   return (
-    <PaymentPage/>
+    <>
+      <SettingsPage />
+    </>
   )
 }
 

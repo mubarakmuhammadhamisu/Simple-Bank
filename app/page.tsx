@@ -1,4 +1,4 @@
-import LNDpage from '@/pages/LNDpage'
+import LNDpage from '@/PageS/LNDpage'
 
 
 
