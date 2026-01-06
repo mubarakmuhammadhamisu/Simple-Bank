@@ -10,7 +10,7 @@ const DashBoardPage = () => {
     <PageTemp>
       <BalanceCard /> 
             
-            <div className="flex gap-4 lg:gap-4  flex-wrap w-full justify justify-center sm:justify-start lg:justify-between">
+            <div className="flex gap-4 lg:gap-4  flex-wrap w-full justify-center sm:justify-start lg:justify-between">
 
               <RTCard/>
 
