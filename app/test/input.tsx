@@ -91,7 +91,7 @@ const PasswordInput = ({ label = "Password", ...props }) => {
                      focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg"
           aria-label={isVisible ? "Hide password" : "Show password"}
           role="button" // Indicates this div acts like a button
-          tabIndex="0" // Makes it keyboard focusable
+          tabIndex={0} // Makes it keyboard focusable
           onKeyDown={(e) => { // Handles keyboard accessibility (Enter/Space)
             if (e.key === 'Enter' || e.key === ' ') {
               toggleVisibility();
