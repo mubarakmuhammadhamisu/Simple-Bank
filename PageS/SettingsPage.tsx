@@ -22,7 +22,7 @@ const settingsPage = () => {
         </div>
       </div>
         
-        <div className='w-full bg-white rounded-2xl shadow-lg p-3.5'>
+        <div className='w-full bg-white shadow-lg p-3.5'>
           <div className=' w-7/12 border-2'>
           <Input classname='flex justify-between ' 
           Type='text' 
@@ -58,3 +58,4 @@ const settingsPage = () => {
 }
 
 export default settingsPage
+
