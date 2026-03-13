@@ -23,7 +23,7 @@ const settingsPage = () => {
       </div>
         
         <div className='w-full bg-white shadow-lg p-3.5'>
-          <div className=' w-7/12 border-2'>
+          <div className=' w-7/12'>
           <Input classname='flex justify-between ' 
           Type='text' 
           Name='chenge' 
@@ -31,7 +31,7 @@ const settingsPage = () => {
           Placeholder='Update your name' 
           Label='Full Name' 
           isFull={false}/>
-          <div className='relative border'>
+          <div className='relative'>
           <Input classname='flex justify-between' 
           Type='text' 
           Name='chenge' 
